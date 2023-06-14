@@ -4,8 +4,6 @@ import java.nio.file.{Files, Path}
 
 object Shared {
 
-  //val AnonCredsTag = "v0.1.0-dev.8"
-  //val AnonCredsLibArchiveName = "library-linux-x86_64.tar.gz"
   val BbsLibName = "libbbs.so"
   val BbsLibHeaderName = "bbs.h"
   val TargetForBbsSharedObjectDownload = "native-lib/linux"
