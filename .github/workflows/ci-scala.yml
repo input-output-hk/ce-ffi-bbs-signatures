@@ -25,8 +25,10 @@ jobs:
         with:
           java-version: 17
           distribution: temurin
-        working-directory: ./wrappers/scala
-      - run: sbt -v publish
+      - run: |
+          cd wrappers/scala
+          sbt -v publish
+
 
   test:
     runs-on: ubuntu-latest
@@ -38,6 +40,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-        working-directory: ./wrappers/scala
       - name: Build and Test
-        run: sbt -v test
+        run: | 
+          cd wrappers/scala 
+          sbt -v test
