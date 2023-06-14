@@ -15,6 +15,11 @@ By default it will extract the lib to a temp folder and the load it so no other 
 
 Only tested on Ubuntu linux / amd64
 
+**The libbbs.so file - built for ubuntu - is included in the project.
+If a new version is released or if you want to target another platform
+don't forget to update the libbbs.xx file.**
+
+
 ### Structure of Api
 
 The raw native interface is captured in BbsPlusNative
@@ -30,7 +35,7 @@ The test script (in c) from the parent project was ported to the test folder.
 So no stability testing or testing for leaks .... 
 
 ## TODO
- - add CI
+ - ~~add CI~~
  - expose all functions
  - figure out if memory is leaking
 
